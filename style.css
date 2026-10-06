@@ -1,0 +1,20 @@
+@font-face { font-family: "Google Sans"; font-weight: 400; src: url("fonts/google-sans-latin-400-normal.woff2") format("woff2"); }
+@font-face { font-family: "Google Sans"; font-weight: 500; src: url("fonts/google-sans-latin-500-normal.woff2") format("woff2"); }
+@font-face { font-family: "Google Sans"; font-weight: 700; src: url("fonts/google-sans-latin-700-normal.woff2") format("woff2"); }
+:root { --bg: #0a0a0b; --surface: #151517; --fg: #f1f1f2; --muted: #9a9aa0; --line: #2a2a2e; --accent: #e6e6e8; color-scheme: dark; }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--fg); font: 400 17px/1.6 "Google Sans", Roboto, system-ui, sans-serif; padding: 40px 16px 56px; }
+main { max-width: 680px; margin: 0 auto; display: grid; gap: 28px; }
+.brand { display: flex; align-items: center; gap: 14px; }
+.brand img { width: 56px; height: 56px; border-radius: 14px; }
+h1 { font-size: 2.2rem; line-height: 1.15; margin: 0; letter-spacing: -0.02em; text-wrap: balance; }
+h2 { font-size: 1.25rem; margin: 0 0 8px; font-weight: 500; }
+p, li { color: #d6d6d9; }
+p { margin: 0 0 10px; }
+.lead { font-size: 1.1rem; color: var(--muted); }
+section { background: var(--surface); border: 1px solid var(--line); border-radius: 18px; padding: 20px; }
+ol, ul { margin: 0; padding-left: 22px; display: grid; gap: 6px; }
+a { color: var(--accent); text-underline-offset: 3px; }
+.meta { font-size: 0.9rem; color: var(--muted); }
+nav { display: flex; flex-wrap: wrap; gap: 18px; font-size: 0.95rem; }
+footer { border-top: 1px solid var(--line); padding-top: 18px; font-size: 0.85rem; color: var(--muted); display: flex; flex-wrap: wrap; justify-content: space-between; gap: 10px; }
